@@ -7,7 +7,7 @@ const Navbar = () => {
     const pathname = usePathname();
 
     return (
-        <nav className="bg-[#24394d]">
+        <nav className="bg-[#16161D]">
             <div className="max-w-1xl mx-auto px-10">
                 <div className="flex justify-between items-center h-16">
                     <div className="flex space-x-7">
@@ -27,20 +27,12 @@ const Navbar = () => {
                                 Home
                             </Link>
                             <Link 
-                                href="/gallery" 
-                                className={`py-4 px-2 ${pathname === '/gallery' 
+                                href="/collection" 
+                                className={`py-4 px-2 ${pathname === '/collection' 
                                     ? 'text-[#FFA015] border-b-2 border-[#FFA015] font-semibold' 
-                                    : 'text-gray-300 font-medium hover:text-[#FFA015] transition duration-300'}`}
+                                    : 'text-white font-medium hover:text-[#FFA015] transition duration-300'}`}
                             >
-                                Gallery
-                            </Link>
-                            <Link 
-                                href="/upload" 
-                                className={`py-4 px-2 ${pathname === '/upload' 
-                                    ? 'text-[#FFA015] border-b-2 border-[#FFA015] font-semibold' 
-                                    : 'text-gray-300 font-medium hover:text-[#FFA015] transition duration-300'}`}
-                            >
-                                Upload
+                                Collection
                             </Link>
                         </div>
                     </div>
